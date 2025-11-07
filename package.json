@@ -1,12 +1,21 @@
 {
   "name": "node-nginx",
   "version": "0.0.1",
-  "description": "node with nginx on docker for beginner",
+  "description": "node with nginx on docker",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "node index.js"
   },
-  "keywords": ["node","nginx","docker","ingress"],
-  "author": "wsawebmaster",
-  "license": "MIT"
+  "keywords": [
+    "node",
+    "nginx",
+    "docker",
+    "ingress"
+  ],
+  "author": "Wagner Andrade",
+  "license": "MIT",
+  "dependencies": {
+    "html-pdf": "^3.0.1"
+  }
 }

@@ -7,7 +7,6 @@ services:
       - /usr/src/app/node_modules
     networks:
       - node_network
-
   proxy:
     restart: unless-stopped
     image: nginx

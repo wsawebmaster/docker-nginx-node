@@ -22,9 +22,19 @@ Projeto: [http://localhost:8080/](http://localhost:8080/)<br />
 
     docker-compose down
 
+### Rebuild
+
+    docker-compose up --build -d
+
 ### Remover Todos os Contêineres e Imagens em Um Comando
 
     docker stop $(docker ps -aq) && docker rm $(docker ps -aq) && docker rmi $(docker images -q) && docker network rm $(docker network ls -q)
+
+#### Questões específicar para atribuir permissões caso precise manipular arquivos, acesse a raiz do projeto
+
+    sudo chown -R wsawebmaster:wsawebmaster .
+
+Substitua wsawebmaster pelo seu usuário
 
 ---
 ---
